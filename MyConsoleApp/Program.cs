@@ -1,4 +1,5 @@
 ﻿using MyLibrary;
+using System.Xml;
 
 namespace MyConsoleApp
 {
@@ -6,8 +7,11 @@ namespace MyConsoleApp
     {
         static void Main(string[] args)
         {
-            MessageWriter writer = new MessageWriter();
-            MyWriter.Write("Hello, Writer");
+            MessageWriter Mywriter = new MessageWriter();
+            Mywriter.Write("Hello, Writer");
+
+            FiggleWriter FWriter = new FiggleWriter();
+            FWriter.Write("Hello, Writer");
         }
     }
 }
